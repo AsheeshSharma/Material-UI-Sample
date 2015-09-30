@@ -2,6 +2,8 @@ package animelabs.assignment;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -57,22 +59,47 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
                     public void onItemClick(View view, int position) {
                         Fragment frag = null;
                         if (position == 1) {
-
-                            Drawer.closeDrawer(Gravity.LEFT);
                             view.setBackgroundResource(R.drawable.listcutom);
+                            Drawer.closeDrawer(Gravity.LEFT);
+                            mRecyclerView.getChildAt(2).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(3).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(4).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(5).setBackgroundResource(Color.TRANSPARENT);
                         }
                         if (position == 2) {
-
+                            view.setBackgroundResource(R.drawable.listcutom);
                             Drawer.closeDrawer(Gravity.LEFT);
+                            mRecyclerView.getChildAt(1).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(3).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(4).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(5).setBackgroundResource(Color.TRANSPARENT);
+
                         }
                         if (position == 3) {
 
                             Drawer.closeDrawer(Gravity.LEFT);
+                            view.setBackgroundResource(R.drawable.listcutom);
+                            mRecyclerView.getChildAt(1).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(2).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(4).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(5).setBackgroundResource(Color.TRANSPARENT);
                         }
                         if (position == 4) {
+                            Drawer.closeDrawer(Gravity.LEFT);
+                            view.setBackgroundResource(R.drawable.listcutom);
+                            mRecyclerView.getChildAt(1).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(3).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(2).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(5).setBackgroundResource(Color.TRANSPARENT);
 
                         }
                         if (position == 5) {
+                            Drawer.closeDrawer(Gravity.LEFT);
+                            view.setBackgroundResource(R.drawable.listcutom);
+                            mRecyclerView.getChildAt(1).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(3).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(4).setBackgroundResource(Color.TRANSPARENT);
+                            mRecyclerView.getChildAt(2).setBackgroundResource(Color.TRANSPARENT);
 
                         }
                     }
